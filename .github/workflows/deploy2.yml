@@ -38,9 +38,8 @@ jobs:
     strategy:
       matrix:
         ec2_instance: 
-          - ec2-54-159-148-13.compute-1.amazonaws.com
-          - ec2-44-202-246-146.compute-1.amazonaws.com
-
+          - ec2-54-159-194-101.compute-1.amazonaws.com
+          - ec2-44-223-4-173.compute-1.amazonaws.com
     steps:
       - name: Set up SSH key
         uses: webfactory/ssh-agent@v0.5.3

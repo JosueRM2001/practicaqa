@@ -54,7 +54,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            sudo docker stop html_project || true
-            sudo docker rm html_project || true
+            sudo docker stop html || true
+            sudo docker rm html || true
             sudo docker pull erickjrm/programhtml2:latest
             sudo docker run -d --name html -p 80:80 erickjrm/programhtml2:latest
